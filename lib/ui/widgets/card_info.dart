@@ -22,7 +22,7 @@ class CardInfo extends StatelessWidget {
         CustomInput(
           controller: controller,
           validator: (v) {
-            if (v == null ) {
+            if (v == null || v.isEmpty) {
               return 'Please enter card num';
             }
             return null;
@@ -36,7 +36,7 @@ class CardInfo extends StatelessWidget {
         5.h,
         CustomInput(
           validator: (v) {
-            if (v == null) {
+            if (v == null || v.isEmpty) {
               return 'Please enter holder name';
             }
             return null;
@@ -50,7 +50,7 @@ class CardInfo extends StatelessWidget {
               child: CustomInput(
                 label: AppTexts.expDate,
                 validator: (v) {
-                  if (v == null) {
+                  if (v == null || v.isEmpty) {
                     return 'Please enter expiration date';
                   }
                   return null;
@@ -64,7 +64,7 @@ class CardInfo extends StatelessWidget {
                 controller: controller,
                 label: AppTexts.cvv,
                 validator: (v) {
-                  if (v == null) {
+                  if (v == null || v.isEmpty) {
                     return 'Please enter cvv code';
                   }
                   return null;

@@ -24,7 +24,7 @@ class _SaveInfoState extends State<SaveInfo> {
         border: Border.all(width: 0.5, color: AppColors.light)
       ),
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 6.0),
+        padding: const EdgeInsets.symmetric(horizontal: 10.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
